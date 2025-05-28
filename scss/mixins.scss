@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+@mixin button-style($bg-color, $hover-color) {
+  background-color: $bg-color;
+  color: $white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+    border-color: $yellow;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}

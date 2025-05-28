@@ -1,0 +1,34 @@
+@use "variables" as *;
+@use "mixins" as m;
+
+.team-info {
+  margin-bottom: 20px;
+
+  p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    color: $text-color;
+  }
+}
+
+.actions {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+
+  .action-btn {
+    @include m.button-style($black, $yellow);
+    width: 45%;
+    font-size: 16px;
+  }
+
+  .back-btn {
+    @include m.button-style($yellow, $yellow-hover);
+    width: 45%;
+    font-size: 16px;
+    color: $black;
+  }
+}

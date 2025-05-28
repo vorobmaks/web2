@@ -1,0 +1,118 @@
+@use "variables" as *;
+@use "mixins" as m;
+@use "team_form";
+@use "team_detail";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $gray-bg;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+header {
+  background-color: $black;
+  color: $white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: $shadow-lg;
+  border-bottom: 3px solid $yellow;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: $white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: $shadow-lg;
+  border: 1px solid $border-color;
+  color: $black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: inherit;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: $yellow;
+    margin: 8px auto;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 15px;
+  margin-bottom: 12px;
+  background: $white;
+  border-radius: 8px;
+  box-shadow: $shadow-sm;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: $gray-bg;
+    transform: translateY(-2px);
+  }
+
+  a {
+    text-decoration: none;
+    color: $black;
+    font-weight: bold;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
+.no-teams {
+  text-align: center;
+  color: $text-color;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.add-btn {
+  @include m.button-style($yellow, $yellow-hover);
+  display: block;
+  width: auto;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  color: $black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .add-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,282 @@
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #212121;
+  font-weight: 500;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input[type=text]:focus {
+  border-color: #FFC107;
+  box-shadow: 0 0 8px rgba(255, 193, 7, 0.3);
+}
+
+.delete-btn {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+  margin-top: 15px;
+  color: #000000;
+}
+.delete-btn:hover {
+  background-color: #FFA000;
+  border-color: #FFC107;
+  transform: translateY(-2px);
+}
+.delete-btn:active {
+  transform: translateY(0);
+}
+
+button {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #000000;
+}
+button:hover {
+  background-color: #FFA000;
+  border-color: #FFC107;
+  transform: translateY(-2px);
+}
+button:active {
+  transform: translateY(0);
+}
+
+.back-btn {
+  text-align: center;
+  margin-top: 25px;
+}
+.back-btn a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
+.back-btn a:hover {
+  color: #FFC107;
+}
+
+form + form {
+  margin-top: 20px;
+}
+
+.team-info {
+  margin-bottom: 20px;
+}
+.team-info p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  color: #212121;
+}
+
+.actions {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.actions .action-btn {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+  width: 45%;
+  font-size: 16px;
+}
+.actions .action-btn:hover {
+  background-color: #FFC107;
+  border-color: #FFC107;
+  transform: translateY(-2px);
+}
+.actions .action-btn:active {
+  transform: translateY(0);
+}
+.actions .back-btn {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+  width: 45%;
+  font-size: 16px;
+  color: #000000;
+}
+.actions .back-btn:hover {
+  background-color: #FFA000;
+  border-color: #FFC107;
+  transform: translateY(-2px);
+}
+.actions .back-btn:active {
+  transform: translateY(0);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+  color: #212121;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid #FFC107;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #FFFFFF;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #E0E0E0;
+  color: #000000;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: inherit;
+}
+h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #FFC107;
+  margin: 8px auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 15px;
+  margin-bottom: 12px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+li:hover {
+  background-color: #F5F5F5;
+  transform: translateY(-2px);
+}
+li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+li a:hover {
+  color: #FFC107;
+}
+
+.no-teams {
+  text-align: center;
+  color: #212121;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.add-btn {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+  display: block;
+  width: auto;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  color: #000000;
+}
+.add-btn:hover {
+  background-color: #FFA000;
+  border-color: #FFC107;
+  transform: translateY(-2px);
+}
+.add-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .add-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
